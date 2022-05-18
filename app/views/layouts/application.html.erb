@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%# Navbar %>
+    <div>
+      <div class="navbar navbar-light bg-light d-flex justify-content-between">
+        <%= link_to "Simple Airbnb", "/flats" %></a>
+        <form class="custom-inline-form">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Search</button>
+          <%= link_to new_flat_path do %>
+            <button type="button" class="btn btn-outline-primary add-flat-btn">
+              Add flat
+            </button>
+          <% end %>
+        </form>
+      </div>
+    </div>
+    <%# title %>
+    <div class="card">
     <%= yield %>
   </body>
 </html>

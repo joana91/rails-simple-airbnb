@@ -1,0 +1,35 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  // background-color: #F8F9FA;
+  background-color: rgb(215, 249, 250);
+  // background-size: cover;
+  // width: 100%;
+}
+
+.custom-inline-form{
+  display: flex;
+  height: 34px;
+}
+
+.search-btn{
+ margin-left: 7px;
+ width: 100px;
+}
+.add-flat-btn{
+ margin-left: 7px;
+ width: 100px;
+ height: 34px;
+}
